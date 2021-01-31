@@ -1,0 +1,93 @@
+{
+	"name": "ifc-syntax",
+	"displayName": "IFC Syntax",
+	"description": "Extension that brings IFC (Industry Foundation Classes) support to VSCode",
+	"repository": "https://github.com/AlanRynne/ifc-syntax.git",
+	"icon": "docs/assets/images/IFC-Syntax-Icon.png",
+	"author": {
+		"name": "Alan Rynne",
+		"email": "alan@rynne.es",
+		"url": "https://rynne.es"
+	},
+	"keywords": [
+		"IFC",
+		"Industry Foundation Classes",
+		"BuildingSmart",
+		"Building Information Modelling",
+		"BIM"
+	],
+	"version": "0.1.4",
+	"publisher": "AlanRynne",
+	"engines": {
+		"vscode": "^1.37.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"activationEvents": [
+		"onLanguage:exp",
+		"onLanguage:ifc"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"languages": [
+			{
+				"id": "ifc",
+				"aliases": [
+					"IFC",
+					"ifc"
+				],
+				"extensions": [
+					".ifc"
+				],
+				"configuration": "./ifc-language-configuration.json"
+			},
+			{
+				"id": "exp",
+				"aliases": [
+					"EXP",
+					"Express"
+				],
+				"extensions": [
+					".exp"
+				],
+				"configuration": "./express-language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "ifc",
+				"scopeName": "source.ifc",
+				"path": "./syntaxes/ifc.tmLanguage.json"
+			},
+			{
+				"language": "exp",
+				"scopeName": "source.express",
+				"path": "./syntaxes/express.tmLanguage.json"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.37.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"tslint": "^5.12.1",
+		"vscode-test": "^1.0.0-next.0"
+	},
+	"__metadata": {
+		"id": "ebb5155d-cad3-415f-a56e-5e096a1ffa9c",
+		"publisherId": "6cc0d0b8-3e2e-4167-ab66-244c751425ce",
+		"publisherDisplayName": "Alan Rynne"
+	}
+}

@@ -1,0 +1,8 @@
+十二月 08, 2020 11:29:33 下午 org.eclipse.lemminx.XMLLanguageServer initialize
+信息: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.14.1
+ - Java : C:\Program Files (x86)\Java\jre1.8.0_72
+ - Git 67a2463 - [maven-release-plugin] prepare release 0.14.1
+十二月 08, 2020 11:31:07 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTraceNotification

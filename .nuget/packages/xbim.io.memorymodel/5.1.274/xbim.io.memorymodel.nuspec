@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Xbim.IO.MemoryModel</id>
+    <version>5.1.274</version>
+    <title>Xbim IO for in-Memory Models</title>
+    <authors>Steve Lockley, Martin Cerny and XBIMTeam Contributors</authors>
+    <owners>Steve Lockley, Martin Cerny and XBIMTeam Contributors</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://raw.githubusercontent.com/xBimTeam/XbimEssentials/master/LICENCE.md</licenseUrl>
+    <projectUrl>https://github.com/xBimTeam/XbimEssentials</projectUrl>
+    <iconUrl>https://avatars1.githubusercontent.com/u/2284875?v=3&amp;amp;s=240</iconUrl>
+    <description>Manages IFC or STEP Model backed by an in-memory representation</description>
+    <releaseNotes>Version 5.1 update. See https://github.com/xBimTeam/XbimEssentials/blob/master/CHANGELOG.md</releaseNotes>
+    <copyright>Copyright © XBIM Ltd</copyright>
+    <tags>BIM, IFC, IfcXml, IfcZip, Ifc4, COBie, BuildingSmart</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7">
+        <dependency id="Xbim.Ifc2x3" version="5.1.274" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Xbim.Ifc2x3" version="5.1.274" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <repository url="https://github.com/xBimTeam/XbimEssentials/tree/master" />
+  </metadata>
+</package>
