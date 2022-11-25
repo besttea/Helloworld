@@ -1,6 +1,6 @@
 # Helloworld
 # Give Me a first program!!!
-test GitHub
+test Gittee
 
-This is my firstly useing this system!
-I'm windows 11 terminal
+Add Hello world.cpp
+
